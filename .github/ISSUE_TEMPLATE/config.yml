@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security guidance
+    url: https://github.com/SebaGutierrezF/steam-idle-manager/blob/main/SECURITY.md
+    about: Read this before sharing logs or authentication-related information.
