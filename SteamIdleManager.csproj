@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <AssemblyName>SteamIdleManager</AssemblyName>
+    <RootNamespace>SteamIdleManager</RootNamespace>
+
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <InformationalVersion>1.0.2</InformationalVersion>
+
+    <Title>Steam Idle Manager</Title>
+    <Product>Steam Idle Manager</Product>
+    <Authors>Steam Idle Manager</Authors>
+    <Description>Windows utility for managing Steam idle sessions across selected AppIDs.</Description>
+    <Copyright>Copyright © 2026</Copyright>
+    <ApplicationIcon>assets\SteamIdleManager.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SteamKit2" Version="3.4.0" />
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

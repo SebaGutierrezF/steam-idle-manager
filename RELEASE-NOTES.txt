@@ -1,0 +1,62 @@
+Steam Idle Manager v1.0.2 — Release Notes
+==========================================
+
+This release closes the initial product-development cycle.
+
+Validated during development:
+- single-AppID idle
+- multi-AppID idle
+- real Steam playtime accumulation
+- private and public presence behavior
+- STOP ALL / Invisible behavior
+- QR authentication
+- credentials + Steam Guard / SDA / email authentication
+- saved sessions protected with Windows DPAPI
+- multiple saved accounts
+- Steam account library synchronization
+- profiles, favorites and recent games
+- system tray
+- timed / indefinite sessions
+- TryAnotherCM recovery
+- active-session automatic reconnect
+- profile restoration after reconnect
+- auto-connect
+- auto-start profile
+- Start with Windows
+- portable self-contained Windows build
+
+v1.0.0 finalization changes:
+- executable/product metadata set to 1.0.0
+- persistent diagnostic logs
+- global exception logging
+- About dialog with logs/app-data shortcuts
+- third-party dependency notices
+- clean distribution build and ZIP generation
+- release README
+
+
+v1.0.1 patch
+------------
+- Fixed a compile-time C# string literal error in MainForm.cs introduced by the
+  v1.0 diagnostic-message polish.
+- No Steam session, authentication, idle, presence, reconnect, profile, tray,
+  startup, or packaging behavior was changed.
+
+
+v1.0.2 branding patch
+---------------------
+- Added the final Steam Idle Manager application icon.
+- The icon is embedded into SteamIdleManager.exe.
+- The main WinForms window now uses the application icon.
+- The system-tray NotifyIcon now uses the same branded icon.
+- Added assets/SteamIdleManager.png and assets/SteamIdleManager.ico to source.
+- No Steam authentication, idle, presence, reconnect, profile, startup or
+  packaging behavior was changed.
+
+
+GitHub-ready release-build correction
+-------------------------------------
+- Fixed BUILD_RELEASE.bat so the NuGet restore matches the win-x64 publish RID.
+- BUILD_RELEASE now uses one runtime-specific `dotnet publish -r win-x64`
+  command, which performs the required restore automatically.
+- No application runtime behavior was changed.

@@ -1,0 +1,53 @@
+THIRD-PARTY NOTICES
+===================
+
+Steam Idle Manager v1.0.2 uses third-party open-source components.
+
+1. SteamKit / SteamKit2
+-----------------------
+Project:
+https://github.com/SteamRE/SteamKit
+
+License:
+GNU Lesser General Public License v2.1 (LGPL-2.1)
+
+SteamKit2 is used to communicate with the Steam network.
+
+2. QRCoder
+----------
+Project:
+https://github.com/Shane32/QRCoder
+
+License:
+MIT License
+
+QRCoder is used to render Steam QR authentication challenges.
+
+3. System.Security.Cryptography.ProtectedData
+---------------------------------------------
+Project / package:
+https://www.nuget.org/packages/System.Security.Cryptography.ProtectedData/
+
+License:
+MIT License
+
+This Microsoft package is used for Windows DPAPI access so remembered Steam
+refresh tokens can be protected for the current Windows user.
+
+4. Transitive dependencies
+--------------------------
+NuGet may include additional transitive dependencies required by the packages
+above. Their licenses remain governed by their respective package metadata and
+upstream projects.
+
+Valve / Steam
+-------------
+"Steam" and related marks are property of Valve Corporation.
+
+Steam Idle Manager is an independent utility and is not affiliated with,
+endorsed by, or sponsored by Valve Corporation.
+
+Distribution note
+-----------------
+Before redistributing modified builds, review and comply with the license terms
+of all bundled third-party components, particularly SteamKit2's LGPL-2.1 terms.
