@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a reproducible problem in Steam Idle Manager
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Steam Idle Manager.
+        Never include Steam passwords, tokens, `.maFile` contents, `shared_secret`, or `identity_secret`.
+  - type: input
+    id: version
+    attributes:
+      label: Steam Idle Manager version
+      placeholder: v1.0.2
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Remove account-specific or authentication information before posting.
+      render: text
